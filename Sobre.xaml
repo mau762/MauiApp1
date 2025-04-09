@@ -1,0 +1,46 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Sobre"
+           
+             BackgroundColor="Black">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="FillAndExpand" HorizontalOptions="Center">
+
+            <Label Text="Informações" 
+           FontSize="24" 
+           FontAttributes="Bold" 
+           HorizontalOptions="Center"
+           TextColor="White"
+           Margin="0,65,0,50"/>
+
+            <Label  HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="• Desenvolvedor: " />
+                        <Span Text="Mauricio de Brito Rodrigues Pinto" TextColor="Red"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label  HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="• RA: " />
+                        <Span Text="2409672" TextColor="Red"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label  HorizontalTextAlignment="Center">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="• Curso: " />
+                        <Span Text="Ciência da Computação" TextColor="Red"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+</ContentPage>

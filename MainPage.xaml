@@ -1,0 +1,31 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             Title="Portal Acadêmico"
+             BackgroundColor="#FF4500">
+    <StackLayout Padding="25" Spacing="20" HorizontalOptions="Fill">
+        <Label Text="Acesso ao Sistema Acadêmico" 
+               FontSize="26"
+               TextColor="White"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+        <Button Text="Ver Disciplinas" 
+                TextColor="White" 
+                BackgroundColor="Black"
+                CornerRadius="10"
+                Clicked="OnDisciplinasButtonClicked" />
+
+        <Button Text="Meus Cursos" 
+                TextColor="White" 
+                BackgroundColor="Black"
+                CornerRadius="10"
+                Clicked="OnCursosButtonClicked" />
+
+        <Button Text="Períodos Atuais" 
+                TextColor="White" 
+                BackgroundColor="Black"
+                CornerRadius="10"
+                Clicked="OnPeriodosButtonClicked" />
+    </StackLayout>
+</ContentPage>

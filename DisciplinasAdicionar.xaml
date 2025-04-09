@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.DisciplinasAdicionar"
+             Title="Adicionar Disciplina"
+             BackgroundColor="OrangeRed">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Adicionar Sua Nova Disciplina"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+            <Label Text="Nome:" TextColor="White"/>
+            <Entry x:Name="NomeDisciplinaEntry" TextColor="#000"/>
+            <Label Text="Sigla:" TextColor="White"/>
+            <Entry x:Name="SiglaDisciplinaEntry" TextColor="#000"/>
+            <Label Text="Observações:" TextColor="White"/>
+            <Editor x:Name="ObservacoesDisciplinaEditor" TextColor="#000"/>
+            <Button Text="Salvar Disciplina"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"/>
+            <Button Text="Voltar"
+                    BackgroundColor="#D9534F"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnVoltarButtonClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,38 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.DisciplinasRemover"
+             Title="Remover Disciplinas"
+             BackgroundColor="OrangeRed">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Remover Disciplinas"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+            <Label Text="Disciplinas Existentes:"
+                   FontAttributes="Bold"
+                   TextColor="White"/>
+            <VerticalStackLayout x:Name="ListaRemoverDisciplinasLayout">
+
+                <HorizontalStackLayout>
+                    <Label Text="Disciplina 1" TextColor="White" VerticalOptions="Center"/>
+                    <Button Text="Excluir" BackgroundColor="#DC3545" TextColor="White"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Disciplina 2" TextColor="White" VerticalOptions="Center"/>
+                    <Button Text="Excluir" BackgroundColor="#DC3545" TextColor="White"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Disciplina 3" TextColor="White" VerticalOptions="Center"/>
+                    <Button Text="Excluir" BackgroundColor="#DC3545" TextColor="White"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            <Button Text="Voltar"
+                    BackgroundColor="#D9534F"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnVoltarButtonClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

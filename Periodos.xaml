@@ -1,0 +1,39 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Periodos"
+             Title="Gerenciar Períodos"
+             BackgroundColor="OrangeRed">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Label Text="Gerenciar Períodos"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Button Text="Pesquisar Períodos"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnPesquisarPeriodosClicked" />
+
+            <Button Text="Adicionar Novo Período"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnAdicionarPeriodoClicked" />
+
+            <Button Text="Remover Períodos"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnRemoverPeriodosClicked" />
+
+            <Button Text="Voltar"
+                    BackgroundColor="#D9534F"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Clicked="OnVoltarButtonClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.CursosAdicionar"
+             Title="Cadastro de Curso"
+             BackgroundColor="#FF5733">
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="12">
+            <Label Text="Cadastrar Curso"
+                   FontSize="23"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Nome do Curso:" TextColor="White"/>
+            <Entry x:Name="NomeCursoEntry" TextColor="Black"/>
+
+            <Label Text="Código:" TextColor="White"/>
+            <Entry x:Name="SiglaCursoEntry" TextColor="Black"/>
+
+            <Label Text="Duração:" TextColor="White"/>
+            <Picker x:Name="PeriodoPicker" TextColor="Black"/>
+
+            <Button Text="Confirmar"
+                    BackgroundColor="Maroon"
+                    TextColor="White" />
+
+            <Button Text="Retornar"
+                    BackgroundColor="#C9302C"
+                    TextColor="White"
+                    HorizontalOptions="Fill"
+                    Clicked="OnVoltarButtonClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
